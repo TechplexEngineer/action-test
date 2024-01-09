@@ -12,5 +12,5 @@ jobs:
       - name: test
         shell: bash
         run: |-
-          C:\ProgramData\Chocolatey\bin\vswhere.exe -products * -requires Microsoft.Component.MSBuild -property installationPath -latest
-          which msbuild
+          /c/ProgramData/Chocolatey/bin/vswhere.exe -products * -requires Microsoft.Component.MSBuild -property installationPath -latest
+          which msbuild.exe
