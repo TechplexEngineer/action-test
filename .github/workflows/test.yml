@@ -8,11 +8,9 @@ jobs:
   build:
     runs-on: windows-2019
 
-    steps:
-      - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v1.1
-  
+    steps:  
       - name: test
         shell: bash
         run: |-
+          C:\ProgramData\Chocolatey\bin\vswhere.exe -products * -requires Microsoft.Component.MSBuild -property installationPath -latest
           which msbuild
