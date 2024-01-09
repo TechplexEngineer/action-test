@@ -2,6 +2,7 @@ name: Test
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   build:
@@ -14,4 +15,4 @@ jobs:
       - name: test
         shell: bash
         run: |-
-          which msubild.exe
+          which msbuild
